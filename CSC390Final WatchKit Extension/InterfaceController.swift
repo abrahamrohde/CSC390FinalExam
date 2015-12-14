@@ -70,7 +70,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate
         self.checkCorrectGuess(Singleton.randomBibleArray[rowIndex + 1])
         Singleton.numberOfGuesses += 1
         print(Singleton.numberOfGuesses)
-        if(Singleton.numberOfGuesses == 5)//If they have completed the game
+        if(Singleton.randomBibleArray.count == 0)//If they have completed the game
         {
             session.sendMessage(["attempts" : Singleton.numberOfGuesses], replyHandler: nil, errorHandler: nil)
         }
