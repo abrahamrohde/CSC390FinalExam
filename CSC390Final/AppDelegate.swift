@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
         // Override point for customization after application launch.
+        let bibleBooksString = "Genesis,Exodus,Leviticus,Numbers,Deuteronomy,Joshua,Judges,Ruth,1 Samuel,2 Samuel,1 Kings,2 Kings,1 Chronicles,2 Chronicles,Ezra,Nehemiah,Esther,Job,Psalms,Proverbs,Ecclesiastes,Song of Solomon,Isaiah,Jeremiah,Lamentations,Ezekiel,Daniel,Hosea,Joel,Amos,Obadiah,Jonah,Micah,Nahum,Habakkuk,Zephaniah,Haggai,Zechariah,Malachi,Matthew,Mark,Luke,John,Acts,Romans,1 Corinthians,2 Corinthians,Galatians,Ephesians,Philippians,Colossians,1 Thessalonians,2 Thessalonians,1 Timothy,2 Timothy,Titus,Philemon,Hebrews,James,1 Peter,2 Peter,1 John,2 John,3 John,Jude,Revelation"
+        let bibleBooksArray = bibleBooksString.componentsSeparatedByString(",")
+        for book in bibleBooksArray
+        {
+            print(book)
+        }
+        
+        //replace this line with the Parse for your project and add me
+        //as a collaborator to your project.  My parse email is: mike@awesomefat.com
+        //PLEASE PUT YOUR NAME IN YOUR PARSE APP NAME SO I CAN TELL THEM APART!!!!!
+        Parse.setApplicationId("qENzJGep7SNx7J3YcvBXh8N1kIhGTDa4fzAPq0oJ",
+            clientKey: "60p7hAX3rzFTypifqvQbrmichTyg7g3n6cqSLGpK")
+        
         return true
     }
 

@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CSC390Final_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="7RX-XI-7Rw">
+                            <items>
+                                <table alignment="left" id="Y79-3d-8gh">
+                                    <items>
+                                        <tableRow identifier="cell" id="wdN-an-fEC" customClass="bibleRow" customModule="CSC390Final_WatchKit_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="2dd-p1-S45">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Book Name" textAlignment="center" id="4zi-00-hLp"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="nameLabel" destination="4zi-00-hLp" id="eZv-Kf-21z"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="theTable" destination="Y79-3d-8gh" id="lPr-9F-YXP"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="gI7-Zi-ZGx">
+            <objects>
+                <controller id="kjX-Wo-x3S">
+                    <items>
+                        <group width="1" alignment="left" id="4zi-Zq-Iom">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="S5M-BY-ksK"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="385" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +70,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="CSC390Final_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

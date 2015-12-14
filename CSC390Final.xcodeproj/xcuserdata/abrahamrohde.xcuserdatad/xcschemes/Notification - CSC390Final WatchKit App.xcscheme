@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0710"
-   version = "1.3">
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+               BuildableName = "CSC390Final WatchKit App.app"
+               BlueprintName = "CSC390Final WatchKit App"
+               ReferencedContainer = "container:CSC390Final.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F92F90E1C1F54ED00C5F055"
+               BuildableName = "CSC390Final WatchKit Extension.appex"
+               BlueprintName = "CSC390Final WatchKit Extension"
+               ReferencedContainer = "container:CSC390Final.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F92F8ED1C1F54ED00C5F055"
+               BuildableName = "CSC390Final.app"
+               BlueprintName = "CSC390Final"
+               ReferencedContainer = "container:CSC390Final.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -13,6 +57,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+            BuildableName = "CSC390Final WatchKit App.app"
+            BlueprintName = "CSC390Final WatchKit App"
+            ReferencedContainer = "container:CSC390Final.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -25,7 +78,30 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "CSC390Final WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/CSC390Final WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+            BuildableName = "CSC390Final WatchKit App.app"
+            BlueprintName = "CSC390Final WatchKit App"
+            ReferencedContainer = "container:CSC390Final.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+            BuildableName = "CSC390Final WatchKit App.app"
+            BlueprintName = "CSC390Final WatchKit App"
+            ReferencedContainer = "container:CSC390Final.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -34,7 +110,30 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "CSC390Final WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/CSC390Final WatchKit App">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+            BuildableName = "CSC390Final WatchKit App.app"
+            BlueprintName = "CSC390Final WatchKit App"
+            ReferencedContainer = "container:CSC390Final.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7F92F8FF1C1F54ED00C5F055"
+            BuildableName = "CSC390Final WatchKit App.app"
+            BlueprintName = "CSC390Final WatchKit App"
+            ReferencedContainer = "container:CSC390Final.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
